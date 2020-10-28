@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  
+}
+function control(){
+  document.getElementById('drag1').src = './tvary/1.png';
+  document.getElementById('drag2').src = './tvary/2.png';
+  document.getElementById('drag3').src = './tvary/3.png';
+  document.getElementById('drag4').src = './tvary/4.png';
+  document.getElementById('drag5').src = './tvary/5.png';
+  document.getElementById('drag6').src = './tvary/6.png';
+  document.getElementById('drag7').src = './tvary/7.png';
+  document.getElementById('drag8').src = './tvary/8.png';
+  document.getElementById('drag9').src = './tvary/9.png';
+  document.getElementById('drag10').src = './tvary/10.png';
+  document.getElementById('drag11').src = './tvary/11.png';
+  document.getElementById('drag12').src = './tvary/12.png';
+  document.getElementById('drag13').src = './tvary/13.png';
+  document.getElementById('drag14').src = './tvary/14.png';
+  document.getElementById('drag15').src = './tvary/15.png';
+  document.getElementById('drag16').src = './tvary/16.png';
+  document.getElementById('drag17').src = './tvary/17.png';
+  document.getElementById('drag18').src = './tvary/18.png';
+  document.getElementById('drag19').src = './tvary/19.png';
+  document.getElementById('drag20').src = './tvary/20.png';
+  document.getElementById('drag21').src = './tvary/21.png';
+  document.getElementById('drag22').src = './tvary/22.png';
+  document.getElementById('drag23').src = './tvary/23.png';
+  document.getElementById('drag24').src = './tvary/24.png';
+  document.getElementById("box").style.gridTemplateAreas = 
+  "'first'  'second'  'third''fourth'";}
+
+
+
+</script>
+</head>
+<body>
+  
+<br>
+
+<br>
+<img id="drag1" class="drag" src=".\cisla\1.png" draggable="true" ondragstart="drag(event)"  >
+<img id="drag2" src=".\cisla\2.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag3" src=".\cisla\3.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag4" src=".\cisla\4.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag5" src=".\cisla\5.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag6" src=".\cisla\6.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag7" src=".\cisla\7.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag8" src=".\cisla\8.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag9" src=".\cisla\9.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag10" src=".\cisla\10.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag11" src=".\cisla\11.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag12" src=".\cisla\12.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag13" src=".\cisla\13.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag14" src=".\cisla\14.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag15" src=".\cisla\15.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag16" src=".\cisla\16.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag17" src=".\cisla\17.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag18" src=".\cisla\18.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag19" src=".\cisla\19.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag20" src=".\cisla\20.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag21" src=".\cisla\21.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag22" src=".\cisla\22.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag23" src=".\cisla\23.png" draggable="true" ondragstart="drag(event)"  class="drag">
+<img id="drag24" src=".\cisla\24.png" draggable="true" ondragstart="drag(event)" class="drag" >
+<div id="button_box">
+  <button id="shit" onclick="control()">Kontrola</button>
+  <button id="reload" onclick="window.location.reload();">Znovu</button>
+  </div>
+<div id="box">
+<div id="first" class="line">
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)" id="an19"> </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an20">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an21">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an22">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an23">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an24">  </div>
+</div>
+<div id="second" class="line">
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an13">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an14">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an15">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an16">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an17">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an18">  </div>
+</div>  
+<div id="third" class="line">
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)" id="an7">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an8">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an9">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an10">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an11">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an12">  </div>
+</div>
+  <div id="fourth" class="line"> 
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)" id="an1">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an2">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an3">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an4">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an5">  </div>
+  <div class="answer" ondrop="drop(event)" ondragover="allowDrop(event)"id="an6">  </div>
+  </div>
+</body>
+</html>
